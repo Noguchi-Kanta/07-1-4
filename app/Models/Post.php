@@ -9,6 +9,11 @@ class Post extends Model
 {
     use HasFactory;
     
+    protected $fillable=[
+        'title', 
+        'body'
+        ];
+    
     //更新順&件数制限
  function getPaginateByLimit(int $limit_count = 5)
  {
